@@ -216,26 +216,27 @@ nav {
 	border-radius: 15px;
 }
 
-.cancel {
+.cancel, .close {
 	position: relative;
-	width: 32px;
-	height: 32px;
+	width: 24px;
+	height: 24px;
 
 	float: right;
 	border-radius: 0px 15px 0px 0px;
+	padding: 5px;
 }
 
-.cancel:hover {
+.cancel:hover, .close:hover {
 	background-color: #003989;
 }
 
-.cancel:active {
+.cancel:active, .close:hover {
 	background-color: #002B67;
 }
 
 #popup-img {
-	width: 32px;
-	height: 32px;
+	width: 24px;
+	height: 24px;
 	vertical-align: middle;
 }
 
