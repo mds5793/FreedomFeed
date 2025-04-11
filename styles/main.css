@@ -167,6 +167,7 @@ nav {
 	background-color: #0047AB;
 	flex-shrink: 0;
 	margin: 5px;
+	border-radius: 15px;
 }
 
 .flashcard:hover {
