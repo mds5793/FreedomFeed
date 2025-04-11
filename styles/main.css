@@ -199,7 +199,7 @@ nav {
 	height: 130px;
 }
 
-.add-flashcard-popup {
+.add-feed-popup {
 	display: none;
 	position: absolute;
 	left: 0;
@@ -211,7 +211,8 @@ nav {
 	width: 35vw;
 	height: 75vh;
 	background-color: #0047AB;
-	box-shadow: 2px 5px 8px black;
+	box-shadow: 1px 5px 10px black;
+	border-radius: 15px;
 }
 
 .cancel {
@@ -220,6 +221,7 @@ nav {
 	height: 32px;
 
 	float: right;
+	border-radius: 0px 15px 0px 0px;
 }
 
 .cancel:hover {

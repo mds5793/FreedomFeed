@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     function bindEvent(){
         $(".add-feed").one('click', function(){
-            $(".add-flashcard-popup").animate({
+            $(".add-feed-popup").animate({
                 width: 'toggle',
                 height: 'toggle'
             });
@@ -41,7 +41,7 @@ $(document).ready(function(){
     bindEvent();
     
     $(".cancel").click(function(){
-        $(".add-flashcard-popup").animate({
+        $(".add-feed-popup").animate({
             width: 'toggle',
             height: 'toggle'
         }, bindEvent());
