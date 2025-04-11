@@ -1,0 +1,260 @@
+/* FreedomFeed™ and Design, Copyright 2022 Matthew D. Swift & SwiftMedia LLC */
+
+/*Animations*/
+@keyframes translate {
+	from {
+		transform: translateX(-100vw);
+	}
+
+	to {
+		transform: translateX(100vw);
+	}
+}
+
+html,
+body,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+nav {
+	position: sticky;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #0047AB;
+}
+
+.nav-elements {
+	padding: 0;
+	list-style: none;
+}
+
+.nav-item {
+	margin-top: 8px;
+}
+
+.motd {
+	margin-top: 16px;
+}
+
+.nav-img {
+	width: 32px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.right-align {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.feed {
+    width: calc(100% - 20px);
+    height: calc(348px - 20px);
+    overflow: hidden;
+    margin: 10px;
+    margin-bottom: 1px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 5px grey inset;
+}
+
+.add-feed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+}
+
+.add-feed:active {
+    background-color: lightgray;
+}
+
+.add-feed h1 {
+    font: bold 200px arial, sans-serif;
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    user-select: none;
+}
+
+.nav-link {
+	padding: 16px 8px;
+	color: white;
+	user-select: none;
+}
+
+.nav-link:hover {
+	background-color: #003989;
+}
+
+.nav-link:active {
+	background-color: #002B67;
+}
+
+#search-id {
+	display: none;
+	margin: 0;
+	border: 0;
+	padding: 10px;
+	box-shadow: 0px 0px 2px 2px grey inset;
+	width: 200px;
+	height: 50px;
+}
+
+#search-id:focus {
+	outline: none;
+}
+
+#motd-id {
+	display: none;
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	height: 50px;
+	width: 200px;
+	padding: 10px;
+	box-shadow: 0px 0px 2px 2px grey inset;
+}
+
+#motd-id:focus {
+	outline: none;
+}
+
+.sidebar {
+	display: none;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	width: 304px;
+	height: 100vh;
+	box-shadow: -5px -1px 5px 0px black;
+	background-color: #0047AB;
+}
+
+.feed {
+	display: flex;
+	width: 99%;
+	height: 298px;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px 5px grey inset;
+	box-sizing: border-box;
+	padding: 8px;
+	margin: 0.5% 0.5%;
+}
+
+#empty {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.plus-feed {
+	font-size: 96px;
+	margin: 0 auto;
+}
+
+.flashcard {
+	background-color: #0047AB;
+	flex-shrink: 0;
+	margin: 5px;
+}
+
+.flashcard:hover {
+	box-shadow: 2px 2px 3px 3px grey;
+}
+
+.large {
+	width: 480px;
+	height: 270px;
+}
+
+.half {
+	width: 240px;
+	height: 270px;
+}
+
+.quarter {
+	width: 240px;
+	height: 130px;
+}
+
+.quarter-wrapper {
+	display: inline-block;
+}
+
+.quarter-grid {
+	display: grid;
+	grid-template-columns: 250px 130px;
+	width: 250px;
+	height: 130px;
+}
+
+.add-flashcard-popup {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+
+	width: 35vw;
+	height: 75vh;
+	background-color: #0047AB;
+	box-shadow: 2px 2px 2px 2px black;
+}
+
+.cancel {
+	position: relative;
+	width: 32px;
+	height: 32px;
+
+	float: right;
+}
+
+.cancel:hover {
+	background-color: #003989;
+}
+
+.cancel:active {
+	background-color: #002B67;
+}
+
+#popup-img {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+}
+
+.file-upload {
+	width: 30vw;
+	height: 25vh;
+	border: 3px dashed black;
+	background-color: silver;
+}
+
+.inline {
+	display: inline;
+}
+
+.light {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	color: white;
+}
+
+.bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	color: white;
+}

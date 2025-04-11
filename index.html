@@ -1,0 +1,109 @@
+<!-- FreedomFeed™ and HTML Code Copyright 2022 Matthew D. Swift & SwiftMedia LLC -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="styles/main.css" rel="stylesheet">
+	<script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+
+<body>
+	<nav>
+		<ul class="nav-elements">
+			<li class="right-align nav-item">
+				<a class="nav-link" id="options">
+					<img src="img/barsHorizontal.png" class="nav-img" />
+				</a>
+			</li>
+			<li class="right-align nav-item">
+				<a class="nav-link" id="notifications">
+					<img src="img/notification-icon.png" class="nav-img" />
+				</a>
+			</li>
+			<li class="right-align nav-item">
+				<a class="nav-link" id="messages">
+					<img src="img/message-icon.png" class="nav-img" />
+				</a>
+			</li>
+			<li class="right-align nav-item">
+				<a class="nav-link" id="search">
+					<img src="img/search.png" class="nav-img" />
+				</a>
+			</li>
+			<li class="right-align">
+				<input type="search" id="search-id" name="searchbar" placeholder="Search...">
+			</li>
+			<li class="float-left nav-item home-button">
+				<a class="nav-link" id="home">
+					<img src="img/home-icon.png" class="nav-img" />
+				</a>
+			</li>
+			<li class="float-left nav-item motd">
+				<a class="nav-link">
+					<div class="inline light">Freedom</div><div class="inline bold">Feed.</div>
+				</a>
+			</li>
+			<li class="float-left nav-item motd">
+				<a class="nav-link" id="motd">
+					<div class="inline light">Your Feed. Your Freedom.</div>
+				</a>
+			</li>
+			<li class="float-left">
+				<input type="text" id="motd-id" name="change-motd" placeholder="Change MOTD...">
+			</li>
+		</ul>
+	</nav>
+	<div class="feed-wrapper">
+		<div class="feed" id="global-feed">
+			<div class="flashcard large">
+			</div>
+			<div class="flashcard half">
+			</div>
+			<div class="quarter-wrapper">
+				<div class="quarter-grid">
+					<div class="flashcard quarter">
+					</div>
+					<div class="flashcard quarter">
+					</div>
+					<div class="flashcard quarter">
+					</div>
+					<div class="flashcard quarter">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="feed add-feed">
+		<h1>+</h1>
+	</div>
+	<div class="add-flashcard-popup">
+		<div class="cancel">
+			<img src="img/cross.png" id="popup-img" />
+		</div>
+		<form id="add-flashcard-form">
+			<label for="target-feed">Target Feed:</label>
+			<input type="text" name="target-feed" placeholder="@username...">
+		</form><br>
+		<label for="card-size">Choose a Card Size: </label>
+		<select name="card-size" id="size">
+			<option value="small">Small</option>
+			<option value="medium">Medium</option>
+			<option value="large">Large</option>
+		</select><br>
+		<label for="target-file">File To Upload:</label>
+		<input type="file" name="target-file"><br>
+		<input type="submit">
+		</form>
+		<!-- 			<div class="file-upload">
+				Drop File Here To Upload...<br/>
+				(Accepted Types: JPEG, PNG, MP4)
+			</div> -->
+	</div>
+	<div class="sidebar">
+		<!--Hello World! I am a Sidebar.-->
+	</div>
+</body>
+
+</html>
