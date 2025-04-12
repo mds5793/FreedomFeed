@@ -226,7 +226,7 @@ nav {
 }
 
 .rel:hover {
-	background-color: #003989;
+	background-color: #0054ca;
 }
 
 .rel:active {
@@ -236,11 +236,21 @@ nav {
 .top {
 	top:0;
 	width: 100%;
+	border-radius: 15px 15px 0px 0px;
 }
 
 .bot {
 	bottom: 0;
 	width: 100%;
+	border-radius: 0px 0px 15px 15px;
+}
+
+.bot:hover {
+	background-color: #003989;
+}
+
+.top:hover {
+	background-color: #003989;
 }
 
 .left {
@@ -265,6 +275,18 @@ nav {
 
 .bot-left-edge {
 	border-radius: 0px 0px 0px 15px;
+}
+
+.card-text {
+	color: white;
+}
+
+.card-text:hover {
+	background-color: rgba(0,0,0,0);
+}
+
+.card-text:active {
+	background-color: rgba(0,0,0,0);
 }
 
 .cancel {
