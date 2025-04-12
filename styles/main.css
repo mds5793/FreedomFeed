@@ -164,8 +164,8 @@ nav {
 }
 
 .flashcard {
+	position: relative;
 	background-color: #0047AB;
-	flex-shrink: 0;
 	margin: 5px;
 	border-radius: 15px;
 }
@@ -216,21 +216,37 @@ nav {
 	border-radius: 15px;
 }
 
-.cancel, .close {
-	position: relative;
+.abs {
+	position: absolute;
+	padding: 5px;
+}
+
+.abs:hover {
+	background-color: #003989;
+}
+
+.abs:active {
+	background-color: #002B67;
+}
+
+.top-left {top:0; left:0; border-radius: 15px 0px 0px 0px;}
+.top-right {top:0; right:0; border-radius: 0px 15px 0px 0px;}
+.bot-right {bottom: 0; right: 0; border-radius: 0px 0px 15px 0px;}
+.bot-left {bottom: 0; left: 0; border-radius: 0px 0px 0px 15px;}
+
+.cancel {
+	float: right;
 	width: 24px;
 	height: 24px;
-
-	float: right;
 	border-radius: 0px 15px 0px 0px;
 	padding: 5px;
 }
 
-.cancel:hover, .close:hover {
+.cancel:hover {
 	background-color: #003989;
 }
 
-.cancel:active, .close:hover {
+.cancel:active {
 	background-color: #002B67;
 }
 
