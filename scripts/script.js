@@ -1,4 +1,4 @@
-//FreedomFeed™ and JavaScript Code, Copyright 2022 - Matthew D. Swift & SwiftMedia LLC
+//FreedomFeed™ and HTML, CSS, and JQuery Code Copyright (c) 2022-2025 Matthew D. Swift & Swift Enterprises LLC
 
 $(document).ready(function(){
     $(".large, .half, .quarter-wrapper").css({"animation":"translate 60s infinite linear"});
