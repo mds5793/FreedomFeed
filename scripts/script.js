@@ -24,7 +24,7 @@ $(document).ready(function(){
         }
     );
 
-    $("#options, #notifications, #messages").click(function(){
+    $("#options, #notifications, #messages, #dashboard").click(function(){
         $(".sidebar").animate({
             right: 'toggle',
             width: 'toggle'
