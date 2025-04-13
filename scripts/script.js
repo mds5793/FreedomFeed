@@ -1,52 +1,71 @@
 //FreedomFeed™ and HTML, CSS, and JQuery Code Copyright (c) 2022-2025 Matthew D. Swift & Swift Enterprises LLC
 
-$(document).ready(function(){
+$(document).ready(function () {
     $(".rel").hide();
 
     //Slow "lazy-river" animation translates unpinned flashcards from left to right across feed.
-    $(".large, .half, .quarter-wrapper").css({"animation":"translate 60s infinite linear"});
+    $(".large, .half, .quarter-wrapper").css({ "animation": "translate 60s infinite linear" });
 
     //Pauses translation animation when hovering over flashcard.
-    $(".flashcard").hover(function(){
-        $(".large, .half, .quarter-wrapper").css({"animation-play-state":"paused"});
-    }, function(){
-        $(".large, .half, .quarter-wrapper").css({"animation-play-state":"running"});
+    $(".flashcard").hover(function () {
+        $(".large, .half, .quarter-wrapper").css({ "animation-play-state": "paused" });
+    }, function () {
+        $(".large, .half, .quarter-wrapper").css({ "animation-play-state": "running" });
     });
 
     //Fadein Animation when hovering over flashcard.
     //Issue: Fade-in/Fade-out triggers too many times per second, if repeatedly hovering on/off flashcard...
-    $('.flashcard').hover (
+    $('.flashcard').hover(
         function () {
             $(this).find(".rel").stop(true, false).fadeIn();
-        }, 
+        },
         function () {
             $(this).find(".rel").stop(true, false).fadeOut();
         }
     );
 
-    $("#options, #notifications, #messages, #dashboard").click(function(){
-        $(".sidebar").animate({
-            right: 'toggle',
-            width: 'toggle'
-        }, 500);
+    let animStateSidebar = false;
+    let animStateSearch = false;
+    let animStateMOTD = false;
+
+    $("#options, #notifications, #messages, #dashboard").click(function () {
+        if (!animStateSidebar) {
+            animStateSidebar = true;
+            $(".sidebar").animate({
+                right: 'toggle',
+                width: 'toggle'
+            }, 500, function () {
+                animStateSidebar = false;
+            });
+        }
     });
 
-    $("#search").click(function(){
-        $("#search-id").animate({
-            width: 'toggle',
-            padding: 'toggle'
-        }, 500)
+    $("#search").click(function () {
+        if (!animStateSearch) {
+            animStateSearch = true;
+            $("#search-id").animate({
+                width: 'toggle',
+                padding: 'toggle'
+            }, 500, function () {
+                animStateSearch = false;
+            });
+        }
     });
 
-    $("#motd").click(function(){
-        $("#motd-id").animate({
-            width: 'toggle',
-            padding: 'toggle'
-        });
+    $("#motd").click(function () {
+        if (!animStateMOTD) {
+            animStateMOTD = true;
+            $("#motd-id").animate({
+                width: 'toggle',
+                padding: 'toggle'
+            }, 500, function () {
+                animStateMOTD = false;
+            });
+        }
     });
 
-    function bindEvent(){
-        $(".add-feed").one('click', function(){
+    function bindEvent() {
+        $(".add-feed").one('click', function () {
             $(".add-feed-popup").animate({
                 width: 'toggle',
                 height: 'toggle'
@@ -55,8 +74,8 @@ $(document).ready(function(){
     }
 
     bindEvent();
-    
-    $(".cancel").click(function(){
+
+    $(".cancel").click(function () {
         $(".add-feed-popup").animate({
             width: 'toggle',
             height: 'toggle'
