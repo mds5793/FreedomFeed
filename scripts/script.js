@@ -14,12 +14,13 @@ $(document).ready(function(){
     });
 
     //Fadein Animation when hovering over flashcard.
+    //Issue: Fade-in/Fade-out triggers too many times per second, if repeatedly hovering on/off flashcard...
     $('.flashcard').hover(
         function () {
-          $(".rel").fadeIn();
+          $(".rel").stop(true, false).fadeIn();
         }, 
         function () {
-          $(".rel").fadeOut();
+          $(".rel").stop(true, false).fadeOut();
         }
     );
 
