@@ -1,6 +1,7 @@
 /* FreedomFeed™ and HTML, CSS, and JQuery Code Copyright (c) 2022-2025 Matthew D. Swift & Swift Enterprises LLC */
 
 /*Animations*/
+/*The animation below moves the flashcards across the feed from -100vw (Viewport Width) to 100 vw*/
 @keyframes translate {
 	from {
 		transform: translateX(-100vw);
@@ -11,6 +12,7 @@
 	}
 }
 
+/* Set the margins and  padding of the webpage to 0 so the navbar extends to edge of the viewport.*/
 html,
 body,
 ul {
@@ -18,10 +20,12 @@ ul {
 	padding: 0;
 }
 
+/* Disable the Scrollbar (use only if suitable).*/
 ::-webkit-scrollbar {
 	display: none;
 }
 
+/* Ensure the navbar is stickied to the top of page always.*/
 nav {
 	position: sticky;
 	top: 0px;
@@ -30,6 +34,7 @@ nav {
 	background-color: #0047AB;
 }
 
+/* Disable default styles for the navbar elements (stored as a list)*/
 .nav-elements {
 	padding: 0;
 	list-style: none;
