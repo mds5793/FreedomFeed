@@ -16,10 +16,10 @@ $(document).ready(function(){
     //Fadein Animation when hovering over flashcard.
     $('.flashcard').hover(
         function () {
-          $(".rel").fadeIn(325);
+          $(".rel").fadeIn();
         }, 
         function () {
-          $(".rel").fadeOut(325);
+          $(".rel").fadeOut();
         }
     );
 
