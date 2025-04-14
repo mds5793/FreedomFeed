@@ -4,7 +4,7 @@
 /*The animation below moves the flashcards across the feed from -100vw (Viewport Width) to 100 vw*/
 @keyframes translate {
 	from {
-		transform: translateX(-100vw);
+		transform: translateX(0vw);
 	}
 
 	to {
@@ -285,8 +285,11 @@ nav {
 }
 
 .card-text {
+	display: flex;
+	align-items: center;
+	width: 22px;
+	height: 22px;
 	color: white;
-	vertical-align: middle;
 }
 
 .card-text:hover {
@@ -314,9 +317,10 @@ nav {
 }
 
 #popup-img {
+	display: block;
+	margin: auto;
 	width: 22px;
 	height: 22px;
-	vertical-align: middle;
 }
 
 .file-upload {
