@@ -288,15 +288,14 @@ nav {
 .username-text {
 	display: flex;
 	align-items: center;
-	width: 22px;
 	height: 22px;
 }
 
-.username-text:hover, .upvote-text:hover {
+.username-text:hover {
 	background-color: rgba(0,0,0,0);
 }
 
-.username-text:hover, .upvote-text:hover {
+.username-text:hover {
 	background-color: rgba(0,0,0,0);
 }
 
