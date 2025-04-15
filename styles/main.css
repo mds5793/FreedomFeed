@@ -230,6 +230,7 @@ nav {
 .rel {
 	position: relative;
 	padding: 5px;
+	color: white;
 }
 
 .rel:hover {
@@ -284,19 +285,18 @@ nav {
 	border-radius: 0px 0px 0px 15px;
 }
 
-.card-text {
+.username-text {
 	display: flex;
 	align-items: center;
 	width: 22px;
 	height: 22px;
-	color: white;
 }
 
-.card-text:hover {
+.username-text:hover, .upvote-text:hover {
 	background-color: rgba(0,0,0,0);
 }
 
-.card-text:active {
+.username-text:hover, .upvote-text:hover {
 	background-color: rgba(0,0,0,0);
 }
 
