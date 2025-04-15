@@ -28,7 +28,6 @@ $(document).ready(function () {
     let animStateSearch = false;
     let animStateMOTD = false;
 
-
     $("#options, #notifications, #messages, #dashboard").on('click', function () {
         //Use Cases:
         //1. Sidebar is hidden:
@@ -39,12 +38,6 @@ $(document).ready(function () {
         //      i. Close sidebar and reopen with the new content.
         slideout();
     });
-
-    function repeat(){
-        for(var i = 0; i < 2; i++){
-            slideout();
-        }
-    }
 
     function slideout() {
         if (!isAnimated) {
