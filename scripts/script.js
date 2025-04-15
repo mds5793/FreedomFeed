@@ -24,21 +24,55 @@ $(document).ready(function () {
         }
     );
 
-    let animStateSidebar = false;
-    let animStateSearch = false;
-    let animStateMOTD = false;
+    let isAnimated = false;
 
-    $("#options, #notifications, #messages, #dashboard").click(function () {
-        if (!animStateSidebar) {
-            animStateSidebar = true;
+    $("#options, #notifications, #messages, #dashboard").on('click', function () {
+        //Use Cases:
+        //1. Sidebar is hidden:
+        //   a. If sidebar is hidden and you click on a nav-bar link, show the sidebar and load the content for that nav-link.
+        //2. Sidebar is visible:
+        //   a. If clicking on the nav-link that loaded the sidebar, close sidebar.
+        //   b. If clicking on a nav-link that didn't trigger the sidebar to open, then:
+        //      i. Close sidebar and reopen with the new content.
+        slideout();
+    });
+
+    function slideout() {
+        if (!isAnimated) {
+            isAnimated = true;
             $(".sidebar").animate({
                 right: 'toggle',
                 width: 'toggle'
             }, 500, function () {
-                animStateSidebar = false;
+                isAnimated = false;
             });
         }
-    });
+    }
+
+    /*     function slideout() {
+            if (!isAnimated) {
+                isAnimated = true;
+                $(".sidebar").animate({
+                    right: 'toggle',
+                    width: 'toggle'
+                }, 500, function () {
+                    isAnimated = false;
+                });
+            }
+        } */
+
+    /*     $("#options, #notifications, #messages, #dashboard").click(function () {
+            /* Perform the animation using a switch statement...
+            if (!animStateSidebar) {
+                animStateSidebar = true;
+                $(".sidebar").animate({
+                    right: 'toggle',
+                    width: 'toggle'
+                }, 500, function () {
+                    animStateSidebar = false;
+                });
+            }
+        }); */
 
     $("#search").click(function () {
         if (!animStateSearch) {
