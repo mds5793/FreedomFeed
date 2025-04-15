@@ -25,6 +25,9 @@ $(document).ready(function () {
     );
 
     let isAnimated = false;
+    let animStateSearch = false;
+    let animStateMOTD = false;
+
 
     $("#options, #notifications, #messages, #dashboard").on('click', function () {
         //Use Cases:
