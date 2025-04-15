@@ -40,6 +40,12 @@ $(document).ready(function () {
         slideout();
     });
 
+    function repeat(){
+        for(var i = 0; i < 2; i++){
+            slideout();
+        }
+    }
+
     function slideout() {
         if (!isAnimated) {
             isAnimated = true;
@@ -51,31 +57,6 @@ $(document).ready(function () {
             });
         }
     }
-
-    /*     function slideout() {
-            if (!isAnimated) {
-                isAnimated = true;
-                $(".sidebar").animate({
-                    right: 'toggle',
-                    width: 'toggle'
-                }, 500, function () {
-                    isAnimated = false;
-                });
-            }
-        } */
-
-    /*     $("#options, #notifications, #messages, #dashboard").click(function () {
-            /* Perform the animation using a switch statement...
-            if (!animStateSidebar) {
-                animStateSidebar = true;
-                $(".sidebar").animate({
-                    right: 'toggle',
-                    width: 'toggle'
-                }, 500, function () {
-                    animStateSidebar = false;
-                });
-            }
-        }); */
 
     $("#search").click(function () {
         if (!animStateSearch) {
