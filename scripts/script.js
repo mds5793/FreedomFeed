@@ -40,6 +40,7 @@ $(document).ready(function () {
         slideout();
     });
 
+    //Slideout animation for sidebar for selectors above.
     function slideout() {
         if (!isAnimated) {
             isAnimated = true;
@@ -52,6 +53,7 @@ $(document).ready(function () {
         }
     }
 
+    //Slideout animation for the searchbar.
     $("#search").click(function () {
         if (!animStateSearch) {
             animStateSearch = true;
@@ -64,6 +66,7 @@ $(document).ready(function () {
         }
     });
 
+    //Slideout animation for Message of the Day (for admins only).
     $("#motd").click(function () {
         if (!animStateMOTD) {
             animStateMOTD = true;

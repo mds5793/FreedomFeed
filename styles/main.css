@@ -42,27 +42,22 @@ nav {
 	list-style: none;
 }
 
+/* Set the margin for any item in the navbar. */
 .nav-item {
 	margin-top: 8px;
 }
 
+/* Set the margin for the MOTD. */
 .motd {
 	margin-top: 15px;
 }
 
+/* Set the dimensions and other settings for images on the navbar. */
 .nav-img {
 	width: 32px;
 	height: 100%;
 	vertical-align: middle;
 	user-select: none;
-}
-
-.right-align {
-	float: right;
-}
-
-.float-left {
-	float: left;
 }
 
 .feed {
