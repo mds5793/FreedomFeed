@@ -313,6 +313,10 @@ nav {
 	background-color: rgba(0, 0, 0, 0);
 }
 
+.username-text a:hover {
+	text-decoration: underline;
+}
+
 /* Default styling for an icon inside a flashcard. */
 #flashcard-icon {
 	display: block;
