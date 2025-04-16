@@ -4,7 +4,7 @@
 /*The animation below moves the flashcards across the feed from -100vw (Viewport Width) to 100 vw*/
 @keyframes translate {
 	from {
-		transform: translateX(0vw);
+		transform: translateX(-100vw);
 	}
 
 	to {
