@@ -28,7 +28,7 @@ $(document).ready(function () {
     let animStateSearch = false;
     let animStateMOTD = false;
 
-    $("#options, #notifications, #messages, #dashboard").on('click', function () {
+    $("#options, #notifications, #messages, #dashboard, .add-feed").on('click', function () {
         //Use Cases:
         //1. Sidebar is hidden:
         //   a. If sidebar is hidden and you click on a nav-bar link, show the sidebar and load the content for that nav-link.
@@ -36,6 +36,7 @@ $(document).ready(function () {
         //   a. If clicking on the nav-link that loaded the sidebar, close sidebar.
         //   b. If clicking on a nav-link that didn't trigger the sidebar to open, then:
         //      i. Close sidebar and reopen with the new content.
+        // Please Note: When clicking on the plus button to create a new feed, the streamer's dashboard should be opened.
         slideout();
     });
 
@@ -73,23 +74,5 @@ $(document).ready(function () {
                 animStateMOTD = false;
             });
         }
-    });
-
-    function bindEvent() {
-        $(".add-feed").one('click', function () {
-            $(".add-feed-popup").animate({
-                width: 'toggle',
-                height: 'toggle'
-            });
-        });
-    }
-
-    bindEvent();
-
-    $(".cancel").click(function () {
-        $(".add-feed-popup").animate({
-            width: 'toggle',
-            height: 'toggle'
-        }, bindEvent());
     });
 });

@@ -150,6 +150,7 @@ nav {
 	height: 100vh;
 	box-shadow: -1px 1px 5px 0px black;
 	background-color: #0047AB;
+	z-index: 150;
 }
 
 .feed {
@@ -207,22 +208,6 @@ nav {
 	grid-template-columns: 250px 130px;
 	width: 250px;
 	height: 130px;
-}
-
-.add-feed-popup {
-	display: none;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-
-	width: 35vw;
-	height: 75vh;
-	background-color: #0047AB;
-	box-shadow: 1px 1px 12px 1px black;
-	border-radius: 15px;
 }
 
 .abs {
