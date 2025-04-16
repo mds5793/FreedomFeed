@@ -316,6 +316,10 @@ nav {
 	text-decoration: underline;
 }
 
+.username-text a:active {
+	text-decoration: none;
+}
+
 /* Default styling for an icon inside a flashcard. */
 #flashcard-icon {
 	display: block;
