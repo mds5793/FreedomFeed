@@ -80,7 +80,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: silver;
+	background-color: silver;;
 }
 
 .add-feed:active {
@@ -143,7 +143,7 @@ nav {
 
 .sidebar {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 50px;
 	right: 0;
 	width: 304px;
