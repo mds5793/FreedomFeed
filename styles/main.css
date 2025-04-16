@@ -4,7 +4,7 @@
 /*The animation below moves the flashcards across the feed from -100vw (Viewport Width) to 100 vw*/
 @keyframes translate {
 	from {
-		transform: translateX(-100vw);
+		transform: translateX(0vw);
 	}
 
 	to {
@@ -60,6 +60,7 @@ nav {
 	user-select: none;
 }
 
+/* Settings for displaying a feed whether empty or not. */
 .feed {
 	width: calc(100% - 20px);
 	height: calc(348px - 20px);
@@ -71,17 +72,21 @@ nav {
 	border-radius: 15px;
 }
 
+/* Styling for the add-feed plus sign used for starting a new feed. */
 .add-feed {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: silver;;
+	background-color: silver;
+	;
 }
 
+/* Styling when Add Feed Plus button is clicked. */
 .add-feed:active {
 	background-color: lightgray;
 }
 
+/* Styling for the h1 element for the Add Feed plus button. */
 .add-feed h1 {
 	font: bold 200px arial, sans-serif;
 	background-color: #565656;
@@ -93,20 +98,24 @@ nav {
 	user-select: none;
 }
 
+/* Styling for a link on the nav-bar */
 .nav-link {
 	padding: 16px 8px;
 	color: white;
 	user-select: none;
 }
 
+/* Styling for the nav-link class on hover. */
 .nav-link:hover {
 	background-color: #003989;
 }
 
+/* Styling for the nav-link class element when clicked. */
 .nav-link:active {
 	background-color: #002B67;
 }
 
+/* Default styling for the Search Button on the navbar. */
 #search-id {
 	display: none;
 	margin: 0;
@@ -117,10 +126,13 @@ nav {
 	height: 50px;
 }
 
-#search-id:focus {
+/* Styling when focus is inside the search bar on the navbar or the MOTD textbox. */
+#search-id:focus,
+#motd-id:focus {
 	outline: none;
 }
 
+/* Default styling for the message of the day text-box. */
 #motd-id {
 	display: none;
 	box-sizing: border-box;
@@ -132,10 +144,7 @@ nav {
 	box-shadow: 0px 0px 2px 2px grey inset;
 }
 
-#motd-id:focus {
-	outline: none;
-}
-
+/* Default styling for the sidebar (appears hidden by default). */
 .sidebar {
 	display: none;
 	position: fixed;
@@ -148,6 +157,7 @@ nav {
 	z-index: 150;
 }
 
+/* Default styling for a generic feed div element. */
 .feed {
 	display: flex;
 	width: 99%;
@@ -159,15 +169,7 @@ nav {
 	margin: 0.5% 0.5%;
 }
 
-#empty {
-	background-color: rgba(0, 0, 0, 0.25);
-}
-
-.plus-feed {
-	font-size: 96px;
-	margin: 0 auto;
-}
-
+/* Default styling for a flashcard element (fancy name for a post inside a feed). */
 .flashcard {
 	position: relative;
 	background-color: #0047AB;
@@ -175,29 +177,44 @@ nav {
 	border-radius: 15px;
 }
 
+/* Styling when hovering over a flashcard. */
 .flashcard:hover {
 	box-shadow: 1px 1px 7px 0px black;
 }
 
+/*
+	Default size for a large flashcard.
+	Note: It might perhaps be better to make the sizes dependent on screen size ratios.
+*/
 .large {
 	width: 480px;
 	height: 270px;
 }
 
+/*
+	Default size for a half-sized flashcard.
+	Note: It might perhaps be better to make the sizes dependent on screen size ratios.
+*/
 .half {
 	width: 240px;
 	height: 270px;
 }
 
+/*
+	Default size for a quarter-sized flashcard.
+	Note: It might perhaps be better to make the sizes dependent on screen size ratios.
+*/
 .quarter {
 	width: 240px;
 	height: 130px;
 }
 
+/* Wrapper container for a grid of quarter-sized flashcards. */
 .quarter-wrapper {
 	display: inline-block;
 }
 
+/* Grid element for quarter-sized flashcards (child of quarter-wrapper element). */
 .quarter-grid {
 	display: grid;
 	grid-template-columns: 250px 130px;
@@ -205,128 +222,125 @@ nav {
 	height: 130px;
 }
 
+/* Styling for an absolute positioned element */
 .abs {
 	position: absolute;
 }
 
+/* 
+	Styling for a relatively positioned element. 
+*/
 .rel {
 	position: relative;
-	padding: 5px;
-	color: white;
 }
 
+/* Styling when hovering over an icon inside a flashcard. */
 .rel:hover {
 	background-color: #0054ca;
 }
 
+/* Styling when clicking on an icon inside a flashcard. */
 .rel:active {
 	background-color: #002B67;
 }
 
+/* Default stlying for elements within a relatively positioned icon within a flashcard. */
+.rel-style {
+	padding: 5px;
+	color: white;
+}
+
+/* Absolute positioning style for a container div that houses the icons for a flashcard (at the top of a flashcard). */
 .top {
-	top:0;
+	top: 0;
 	width: 100%;
 	border-radius: 15px 15px 0px 0px;
 }
 
+/* Absolute positioning style for a container div that houses the icons for a flashcard (at the bottom of a flashcard). */
 .bot {
 	bottom: 0;
 	width: 100%;
 	border-radius: 0px 0px 15px 15px;
 }
 
-.bot:hover {
-	background-color: #003989;
-}
-
+/* On hover for both top and bottom container divs. */
+.bot:hover,
 .top:hover {
 	background-color: #003989;
 }
 
+/* Left align a relatively positioned element. */
 .left {
 	float: left;
 }
 
+/* Right align a relatively positioned element. */
 .right {
 	float: right;
 }
 
+/* Round the top-left corner of an icon inside a flashcard. */
 .top-left-edge {
 	border-radius: 15px 0px 0px 0px;
 }
 
+/* Round the top-right corner of an icon inside a flashcard. */
 .top-right-edge {
 	border-radius: 0px 15px 0px 0px;
 }
 
+/* Round the bottom-right corner of an icon inside a flashcard. */
 .bot-right-edge {
 	border-radius: 0px 0px 15px 0px;
 }
 
+/* Round the bottom-left corner of an icon inside a flashcard. */
 .bot-left-edge {
 	border-radius: 0px 0px 0px 15px;
 }
 
+/* Default styling for the username inside a flashcard. */
 .username-text {
 	display: flex;
 	align-items: center;
 	height: 22px;
+	user-select: none;
 }
 
+/* Remove styling for relative elements within a flashcard on hover of the username text. */
 .username-text:hover {
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 }
 
-.username-text:hover {
-	background-color: rgba(0,0,0,0);
-}
-
-.cancel {
-	float: right;
-	width: 24px;
-	height: 24px;
-	border-radius: 0px 15px 0px 0px;
-	padding: 5px;
-}
-
-.cancel:hover {
-	background-color: #003989;
-}
-
-.cancel:active {
-	background-color: #002B67;
-}
-
-#popup-img {
+/* Default styling for an icon inside a flashcard. */
+#flashcard-icon {
 	display: block;
 	margin: auto;
 	width: 22px;
 	height: 22px;
 }
 
-.file-upload {
-	width: 30vw;
-	height: 25vh;
-	border: 3px dashed black;
-	background-color: silver;
-}
-
+/* Display title text inline */
 .inline {
 	display: inline;
 }
 
+/* Display first portion of title text light. */
 .light {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: lighter;
 	color: white;
 }
 
+/* Display second half of title text as bold.*/
 .bold {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
 	color: white;
 }
 
+/* Add padding to title text. */
 .title {
 	padding-left: 5px;
 	padding-right: 5px;
