@@ -81,5 +81,10 @@ $(document).ready(function () {
 
     //Remove/Add Class to parent flashcard div of clicked button.
     $(".pin-button").on("click", function(){
+        /**
+         * Find any flashcard with 'pinned' remove the 'pinned' class then,
+         * add the 'pinned' class to the flashcard that triggered this click event and then,
+         * disable/enable the 'lazy-river' animation.
+         */
     });
 });
