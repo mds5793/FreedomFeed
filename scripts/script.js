@@ -28,7 +28,7 @@ $(document).ready(function () {
     let animStateSearch = false;
     let animStateMOTD = false;
 
-    $("#options, #notifications, #messages, #dashboard, .add-feed").on('click', function () {
+    $("#options, #notifications, #messages, #dashboard, .add-feed, #usn").on('click', function () {
         //Use Cases:
         //1. Sidebar is hidden:
         //   a. If sidebar is hidden and you click on a nav-bar link, show the sidebar and load the content for that nav-link.
