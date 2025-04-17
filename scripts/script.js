@@ -78,4 +78,8 @@ $(document).ready(function () {
             });
         }
     });
+
+    //Remove/Add Class to parent flashcard div of clicked button.
+    $(".pin-button").on("click", function(){
+    });
 });
