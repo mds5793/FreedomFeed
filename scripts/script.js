@@ -4,13 +4,13 @@ $(document).ready(function () {
     $(".rel").hide();
 
     //Slow "lazy-river" animation translates unpinned flashcards from left to right across feed.
-    $(".large, .half, .quarter-wrapper").not(".pinned").css({ "animation": "translate 60s infinite linear" });
+    $(".container").not(".pinned").css({ "animation": "translate 60s infinite linear" });
 
     //Pauses translation animation when hovering over flashcard.
     $(".flashcard").hover(function () {
-        $(".large, .half, .quarter-wrapper").css({ "animation-play-state": "paused" });
+        $(".container").css({ "animation-play-state": "paused" });
     }, function () {
-        $(".large, .half, .quarter-wrapper").css({ "animation-play-state": "running" });
+        $(".container").css({ "animation-play-state": "running" });
     });
 
     //Fadein Animation when hovering over flashcard.

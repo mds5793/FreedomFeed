@@ -172,7 +172,6 @@ nav {
 .flashcard {
 	position: relative;
 	background-color: #0047AB;
-	margin: 5px;
 	border-radius: 15px;
 }
 
@@ -206,6 +205,7 @@ nav {
 .quarter {
 	width: 240px;
 	height: 130px;
+	margin: 5px;
 }
 
 /* Wrapper container for a grid of quarter-sized flashcards. */
@@ -353,7 +353,16 @@ nav {
 	padding-right: 5px;
 }
 
+.container {
+	margin: 5px;
+}
+
+.grid {
+	margin: 0px;
+}
+
 .pinned {
 	position: absolute;
+	border-radius: 15px;
 	box-shadow: 1px 1px 7px 0px black;
 }
