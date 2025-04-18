@@ -362,7 +362,8 @@ nav {
 }
 
 .pinned {
-	position: absolute;
+	position: fixed;
 	border-radius: 15px;
 	box-shadow: 1px 1px 7px 0px black;
+	z-index: 200;
 }

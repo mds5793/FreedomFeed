@@ -8,9 +8,9 @@ $(document).ready(function () {
 
     //Pauses translation animation when hovering over flashcard.
     $(".flashcard").hover(function () {
-        $(".container").css({ "animation-play-state": "paused" });
+        $(".container").not(".pinned").css({ "animation-play-state": "paused" });
     }, function () {
-        $(".container").css({ "animation-play-state": "running" });
+        $(".container").not(".pinned").css({ "animation-play-state": "running" });
     });
 
     //Fadein Animation when hovering over flashcard.
