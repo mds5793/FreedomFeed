@@ -86,5 +86,7 @@ $(document).ready(function () {
          * add the 'pinned' class to the flashcard that triggered this click event and then,
          * disable/enable the 'lazy-river' animation.
          */
+
+        $(this).closest(".container").addClass("pinned");
     });
 });
